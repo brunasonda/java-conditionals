@@ -11,7 +11,7 @@ public class LogIn {
         String password = scanner.nextLine();
         String myUser = "admin";
         String myPassword = "1234";
-if (user.equals(myUser) && password.equals(myPassword)) {;
+if (user.equals(myUser) && password.equals(myPassword)) {
     System.out.print("Acceso concedido");
 }
 else {
