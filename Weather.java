@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Weather {
     public static void main(String[] args) {
         //Escribe un programa que pida al usuario que ingrese la temperatura en celcius de su ciudad (La pregunta y la respuesta deberá estar en una sola línea) y según ello devuelva lo siguiente:
@@ -9,5 +11,26 @@ public class Weather {
         //Si es mayor a 36: Ahí no hay quien viva
 
         //Imprime el resultado
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Hola,ingresa la temperatura en celcius en tu ciudad: ");
+        double temperature = scanner.nextDouble();
+        if (temperature <= 0) {
+            System.out.print("Te estás congelando");
+        }
+        else if (temperature > 0 && temperature <= 10) {
+            System.out.print("Hace mucho frío");
+        }
+        else if (temperature > 11 && temperature <= 17) {
+            System.out.print("Con un abrigo estás bien");
+        }
+        else if (temperature > 18 && temperature <= 25) {
+            System.out.print("Parece que ha llegado el verano");
+        }
+        else if (temperature > 26 && temperature <= 35) {
+            System.out.print("Que calooorrrrr");
+        }
+        else if (temperature > 36) {
+            System.out.print("Ahí no hay quien viva");
+        }
     }
 }
